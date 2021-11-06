@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>	Custom carousel/slider</title>
+	<style type="text/css">
+		body {margin: 0;}
+		.carousel {height: 500px;position: relative;width: 100%;transition: 1s;left: 0;}
+		.carousel-inner {height: 100%;width: 100%;transition:1s;position: absolute;}
+		.carousel-item {height: 100%;width: 100%;display: inline-block;position: absolute;}
+		.carousel-item img {height: 100%;width: 100%;object-fit: cover;}
+		.carousel-button {position: absolute;transform: translateY(-50%);width: 100%;display: flex;justify-content: space-between;top:50%;}
+		.carousel-button button {margin: 0 10px;cursor: pointer;}
+	</style>
+</head>
+<body>
+	<div class="carousel-container" style="position: relative;overflow: hidden;">
+	<div class="carousel">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="./images/manali1.jpg"/>
+			</div>
+			
+			<div class="carousel-item">
+				<img src="./images/manali3.jpg"/>
+			</div>
+			
+			<div class="carousel-item">
+				<img src="./images/manali4.jpg"/>
+			</div>
+			
+			<div class="carousel-item">
+				<img src="./images/Org.jpg"/>
+			</div>
+			
+			<div class="carousel-item">
+				<img src="./images/shimla.webp"/>
+			</div>
+			
+			<div class="carousel-item">
+				<img src="./images/shimla2.jfif"/>
+			</div>
+			
+			<div class="carousel-item">
+				<img src="./images/shimla3.webp"/>
+			</div>
+		</div>
+		
+	</div>
+	<div class="carousel-button">
+		<button onclick="leftSlider()">Left</button>
+		<button  onclick="rightSlider()">Right</button>
+	</div>
+	</div>
+</body>
+<script>
+	var sum = 0
+	items = document.getElementsByClassName('carousel-item')
+	for (let i=0;i<items.length;i++){
+		items[i].style.left = `${i*100}%`
+	}
+
+	function leftSlider(){
+		if (sum==0){
+			return;
+		}
+		let car_class = document.getElementsByClassName('carousel')
+		car_class[0].style.left = `-${(sum-1)*100}%`
+		sum--;
+	}
+
+	function rightSlider(){
+		if (sum+1>items.length-1){
+			return;
+		}
+		let car_class = document.getElementsByClassName('carousel')
+		car_class[0].style.left = `-${(sum+1)*100}%`
+		sum++;
+	}
+</script>
+</html>
