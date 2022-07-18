@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #hocalwire-carousel-container {
+            position: relative;
+            border: 1px solid #000;
+            border-radius: 10px;
+            overflow: hidden;
+            height: auto;
+            width:800px
+        }
+
+        #hocalwire-carousel-container > div:first-child {
+            overflow: hidden;
+            max-width: 100%;
+            margin: 0;
+        }
+
+        #hocalwire-carousel {
+            position: relative;
+            width: 5000px;
+            height: 100%;
+        }
+
+        #hocalwire-carousel .animate{
+            -webkit-transition-duration: .5s;
+        -moz-transition-duration: .5s;
+        -o-transition-duration: .5s;
+        transition-duration: .5s;
+        -webkit-transition-property: -webkit-transform;
+        -moz-transition-property: -moz-transform;
+        -o-transition-property: -o-transform;
+        transition-property: transform;
+        }
+
+        #hocalwire-carousel .hocalwire-slide {
+            list-style: none;
+            position: relative;
+            float: left;
+            text-align: center;
+            height: 100%;
+        }
+
+        #hocalwire-carousel .hocalwire-slide .hocalwire-slide-container{
+            width: 100%;
+            height: 100%;
+        }
+
+
+        #hocalwire-carousel-container #controls{
+            position: absolute;
+            width: 100%;
+            top: calc( 50% - 25px);
+        }
+
+        #hocalwire-carousel-container #controls span {
+            width: 50px;
+            cursor: pointer;
+            opacity: 0.4;
+        }
+
+        #hocalwire-carousel-container #controls span:hover {
+            opacity: 1;
+        }
+
+        #hocalwire-carousel-container #prev {
+            float: left;
+        }
+
+        #hocalwire-carousel-container #next {
+            float: right;
+        }
+
+        .d-none {
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+<div id="left_level_1">
+    <div id="hocalwire-carousel-container" style="visibility: hidden;">
+        <div style="height: 100%">
+            <ul id="hocalwire-carousel" class="animate">
+                <li class="hocalwire-slide animate">
+                    <div>
+                        <h1>Hello world 1!</h1>
+                    </div>
+                </li>
+                <li class="hocalwire-slide animate">
+                    <div>
+                        <h1>Hello world 2!</h1>
+                    </div>
+                </li>
+                <li class="hocalwire-slide animate">
+                    <div>
+                        <h1>Hello world 3!</h1>
+                    </div>
+                </li>
+                <li class="hocalwire-slide animate">
+                    <div>
+                        <h1>Hello world 4!</h1>
+                    </div>
+                </li>
+                <li class="hocalwire-slide animate">
+                    <div>
+                        <h1>Hello world 5!</h1>
+                    </div>
+                </li>
+                <li class="hocalwire-slide animate">
+                    <div>
+                        <h1>Hello world 6!</h1>
+                    </div>
+                </li>
+            </ul> 
+        </div>
+        <div id="controls">
+            <span id="prev"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1014830/prev.png"></span>
+            <span id="next"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1014830/next.png"></span>
+        </div>
+    </div>
+</div>
+<div id="left_level_2">
+    <div id="hocalwire-carousel-container" style="visibility: hidden;">
+        <div style="height: 100%">
+            <ul id="hocalwire-carousel" class="animate">
+                <li class="hocalwire-slide animate">
+                    <div>
+                        <h1>Hello world 1!</h1>
+                    </div>
+                </li>
+                <li class="hocalwire-slide animate">
+                    <div>
+                        <h1>Hello world 2!</h1>
+                    </div>
+                </li>
+                <li class="hocalwire-slide animate">
+                    <div>
+                        <h1>Hello world 3!</h1>
+                    </div>
+                </li>
+                
+            </ul> 
+        </div>
+        <div id="controls">
+            <span id="prev"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1014830/prev.png"></span>
+            <span id="next"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1014830/next.png"></span>
+        </div>
+    </div>
+</div>
+
+<div id="left_level_3">
+    <div id="hocalwire-carousel-container" style="visibility: hidden;">
+        <div style="height: 100%">
+            <ul id="hocalwire-carousel" class="animate">
+                <li class="hocalwire-slide animate">
+                    <div class="hocalwire-slide-container">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1014830/nature-1.jpg"/>
+                    </div>
+                </li>
+                <li class="hocalwire-slide animate">
+                    <div class="hocalwire-slide-container">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1014830/nature-2.jpg"/>
+                    </div>
+                </li> 
+                <li class="hocalwire-slide animate">
+                    <div class="hocalwire-slide-container">     
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1014830/nature-3.jpg"/>
+                    </div>
+                </li>
+                <li class="hocalwire-slide animate">
+                    <div class="hocalwire-slide-container"> 
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1014830/nature-4.jpg"/>
+                    </div>
+                </li>
+                <li class="hocalwire-slide animate">
+                    <div class="hocalwire-slide-container">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1014830/nature-5.jpg"/>
+                    </div>
+                </li>
+            </ul> 
+        </div>
+        <div id="controls" class="d-none">
+            <span id="prev"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1014830/prev.png"></span>
+            <span id="next"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1014830/next.png"></span>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<script> 
+    
+
+// Variables for function:
+// autoSlide -> Automatic click next on some seconds
+// time for autoSlide
+// Use arrow -> hide or show
+// width of main container -> in PX
+
+
+function newFun(el_id,arr){
+    var that = this;
+    if(!el_id){
+        this.initCarousel = function(){
+            console.log("Infinite Carousel: No element_id found with",el_id);
+            return;
+        };
+        return;
+    }else{
+        if(document.querySelector(el_id+' #hocalwire-carousel-container')===null){
+            this.initCarousel = function(){
+                console.log("Carousel Exception: No element found with this id");
+                return;
+            };
+            return;
+        }else{
+            document.querySelector(el_id+' #hocalwire-carousel-container');
+            document.querySelector(el_id+' #hocalwire-carousel-container #controls').style.display="none";
+        }
+    }
+    this.index = 0;
+    this.amount= 0;
+    this.currTransl = [];
+    this.moveOffset = 0;
+    this.showPrevNextButtons = false;
+    this.infiniteCarousel = false;
+    this.infiniteCarouselTime = 2000;
+    if(arr && Object.keys(arr).length){
+        if(arr.showPrevNext){
+            this.showPrevNextButtons = true;
+        }else if(arr.infiniteCarousel){
+            this.infiniteCarousel = true;
+            if(arr.infiniteCarouselTime){
+                this.infiniteCarouselTime = arr.infiniteCarouselTime;
+            }
+        }
+    }
+
+    this.hocalNext = function(){
+        this.translationComplete = false;
+        var outerIndex = (this.index) % this.amount.length;
+        this.index++;
+        for(var i = 0; i < this.amount.length; i++)
+        {
+            var hocalwireSlide = document.querySelectorAll(el_id+ " .hocalwire-slide")[i];    
+            hocalwireSlide.style.opacity = '1';    
+            hocalwireSlide.style.transform = 'translateX('+(this.currTransl[i]-this.moveOffset)+'px)';
+            this.currTransl[i] = this.currTransl[i]-this.moveOffset;
+        }
+        var outerSlide = document.querySelectorAll(el_id+ " .hocalwire-slide")[outerIndex];
+        outerSlide.style.transform = 'translateX('+(this.currTransl[outerIndex] + this.moveOffset * (this.amount.length))+'px)';
+        outerSlide.style.opacity = '0';
+        this.currTransl[outerIndex] = this.currTransl[outerIndex]+(this.moveOffset*this.amount.length);
+    };
+
+    this.hocalPrev = function(){
+        this.index--;
+        if (this.index == -1)
+        {
+            this.index = this.amount.length-1;
+        }
+        var outerIndex = (this.index) % this.amount.length;
+        for (var i = 0; i < this.amount.length; i++)
+        {
+            var slide = document.querySelectorAll(el_id+ " .hocalwire-slide")[i];   
+            slide.style.opacity = '1';    
+            slide.style.transform = 'translateX('+(this.currTransl[i]+this.moveOffset)+'px)';
+            this.currTransl[i] = this.currTransl[i]+this.moveOffset;
+        }
+
+        var outerSlide = document.querySelectorAll(el_id+ " .hocalwire-slide")[outerIndex]; 
+        outerSlide.style.transform = 'translateX('+(this.currTransl[outerIndex]-(this.moveOffset*this.amount.length))+'px)';
+        outerSlide.style.opacity = '0';
+        this.currTransl[outerIndex] = this.currTransl[outerIndex]-this.moveOffset*(this.amount.length);
+    };
+
+    this.initCarousel = function(){
+        var hocalwireCarousel = document.querySelector(el_id+' #hocalwire-carousel');
+        this.amount = document.querySelectorAll(el_id+ " .hocalwire-slide");
+        this.moveOffset = parseInt(window.getComputedStyle(document.querySelector(el_id+' #hocalwire-carousel-container')).width, 10);
+        
+        // calcuate the width of the carousel
+        hocalwireCarousel.style.width = (this.amount.length * this.moveOffset) + 'px';
+        var getOffset = this.moveOffset;
+        if(this.amount.length){
+            this.amount.forEach(function(item){
+                item.style.width = getOffset+'px';
+                item.style.transform = 'translateX(-'+getOffset+'px'+')';
+                
+            });
+        }else{
+            return;
+        }
+        
+        // prevent multiple click when transition
+        for(var i = 0; i < this.amount.length; i++)
+        {
+            this.currTransl[i] = -this.moveOffset;                 
+        }
+
+        document.querySelector(el_id+' #hocalwire-carousel-container').style.visibility = "visible";
+
+        if(this.showPrevNextButtons){
+            // add the last item to the start so that translateX(-moveOffset) works (In case the first click is the previous button)
+            hocalwireCarousel.insertBefore(hocalwireCarousel.children[this.amount.length-1], hocalwireCarousel.children[0]);
+            document.querySelector(el_id+' #hocalwire-carousel-container #controls').style.display="block";
+            document.querySelector(el_id+' #prev').addEventListener('click', function(){
+                that.hocalPrev();
+            }, true);
+            document.querySelector(el_id+' #next').addEventListener('click', function(){
+                that.hocalNext();
+            }, true);
+            setInterval(function(){
+                that.hocalNext.call(that);
+            },10000);
+        }else{
+            setInterval(function(){
+                that.hocalNext.call(that);
+            },that.infiniteCarouselTime);
+        }
+        
+        
+    };   
+}
+
+var n1 = new newFun("#left",{
+    infiniteCarousel:true,
+    infiniteCarouselTime:5000,
+    showPrevNext:true,
+});
+n1.initCarousel();
+
+var n2 = new newFun("#left_level_2");
+n2.initCarousel();
+
+var n3 = new newFun("#left_level_1");
+n3.initCarousel();
+
+</script>
+</html>
